@@ -4,7 +4,7 @@ namespace Collection;
 
 use OutOfRangeException;
 
-class Sequence implements Collection
+class Vector implements Collection
 {
     private array $values = [];
 
