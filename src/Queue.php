@@ -2,7 +2,7 @@
 
 namespace Collection;
 
-class Queue extends Collection
+class Queue implements Collection
 {
     private array $queue = [];
 

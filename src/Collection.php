@@ -4,9 +4,9 @@ namespace Collection;
 
 use Countable;
 
-abstract class Collection implements Countable, JsonSerializable
+interface Collection extends Countable, JsonSerializable
 {
-    abstract public function clear(): void;
+    public function clear(): void;
 
-    abstract public function isEmpty(): bool;
+    public function isEmpty(): bool;
 }
