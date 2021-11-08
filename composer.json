@@ -1,0 +1,9 @@
+{
+    "name": "bastienwcs/my-collection",
+    "autoload": {
+        "psr-4": {
+            "Collection\\": "src/"
+        }
+    },
+    "require": {}
+}
