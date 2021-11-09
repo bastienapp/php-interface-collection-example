@@ -2,6 +2,8 @@
 
 namespace Collection;
 
+use UnderflowException;
+
 class Queue implements Collection
 {
     private array $queue = [];
@@ -28,6 +30,9 @@ class Queue implements Collection
 
     public function pop(): mixed
     {
+        if ($this->count() === 0) {
+            throw new UnderflowException("Queue is empty");
+        }
         $first = array_splice($this->queue, 0, 1);
         return $first[0];
     }
